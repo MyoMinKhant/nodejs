@@ -25,6 +25,10 @@ app.post("/", (req, res) => {
     });
     //const newlist = JSON.stringify(uArray);
     res.send(uArray);
+    fs.writeFile(__dirname + "/user.json", JSON.stringify(uArray), err => {
+      if (err) throw err;
+      console.log("File is written successfully...")
+    })
   });
 });
 
