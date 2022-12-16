@@ -19,7 +19,7 @@ localhost:8000/cm/[feet]/[inches]
 
 - **Installation**
 ```
-git clone https://github.com/MyoMinKhat/NodeJs.git
+git clone https://github.com/MyoMinKhat/nodejs.git
 cd day08
 npm i express
 node index.js
