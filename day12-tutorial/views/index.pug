@@ -1,0 +1,11 @@
+html
+  head
+    title Home
+  body
+  h2 Welcome!
+    div(style={"display": 'block', "padding-bottom": "10px"})
+    if(!user)
+      a(href="/login" style={'padding-right': '20px', 'font-size': '18px'}) Login
+      a(href="/register" style={'padding-right': '20px', 'font-size': '18px'}) Register
+    if(user)  
+      a(href="/dashboard") Dashboard
